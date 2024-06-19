@@ -1,0 +1,126 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #666;
+}
+
+.section {
+  padding: 8px;
+}
+
+.navigation {
+  color: #f74c26;
+  background-color: #f7f6f2;
+}
+.navigation__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation__logo svg {
+  height: 40px;
+}
+.navigation__page-title {
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #f74c26;
+}
+.navigation__page-title:hover {
+  text-decoration: underline;
+}
+.navigation__menu-group--right {
+  display: flex;
+  gap: 10px;
+}
+.navigation__btn {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.navigation__btn--outline {
+  background: transparent;
+  border: 1px solid #fff;
+}
+.navigation__btn--fill {
+  color: #f7f6f2;
+  background-color: #f74c26;
+}
+
+.hero {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+.hero__text {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+.hero__search-input {
+  width: 50%;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 1em;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* 줄 바꿈 설정 */
+  gap: 30px; /* 간격 설정 */
+  justify-content: flex-start; /* 카드 요소들을 왼쪽으로 정렬 */
+  padding: 20px; /* 주변 여백 설정 */
+}
+
+.card {
+  flex-basis: calc(25% - 30px); /* 한 줄에 네 개의 카드가 나타나도록 너비 설정 */ /* 최대 너비도 같은 값으로 설정 */
+  max-width: calc(25% - 30px); /* 최대 너비도 같은 값으로 설정 */
+  padding-inline: 10px;
+  margin-bottom: 30px; /* 아래쪽 간격 설정 */
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  background-color: #fff;
+  border: 1px solid #f74c26;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+.card__author {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #f74c26;
+}
+.card__author-role {
+  margin: 0;
+  font-size: 15px;
+  color: #666;
+}
+.card__title {
+  padding: 10px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #f74c26;
+  text-align: center;
+}
+@media (width <= 768px) {
+  .card__author-role, .card__title, .card__author {
+    display: none;
+  }
+}
