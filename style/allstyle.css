@@ -27,7 +27,8 @@ body {
 }
 .navigation__page-title {
   margin-left: 20px;
-  font-size: 1.5em;
+  font-size: 22px;
+  font-weight: 600;
 }
 .navigation__menu-group--right {
   display: flex;
@@ -79,7 +80,7 @@ img {
   flex: 1 1 300px; /* 카드 너비를 제어하는 flexbox 속성 */
   overflow: hidden; /* 내용이 넘치는 것을 방지 */
   font-family: "IBM Plex Sans", sans-serif;
-  font-size: 1.125rem;
+  font-size: 20px;
   font-weight: 400;
   line-height: 150%;
   background-color: #fff;
@@ -89,18 +90,27 @@ img {
 }
 .card__top {
   padding: 10px;
+  padding-inline-start: 20px;
   border-bottom: 1px solid #f74c26;
 }
 .card__author {
-  margin-bottom: 5px;
+  margin: 0;
   font-weight: 600;
+  color: #f74c26;
 }
 .card__author-role {
+  margin: 0;
+  font-size: 15px;
   color: #666;
 }
 .card__middle {
   width: 100%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+}
+.card__title {
+  padding: 10px;
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
 }
