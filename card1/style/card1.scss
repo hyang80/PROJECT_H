@@ -88,3 +88,22 @@ img {
   gap: 20px; /* 카드 사이의 간격 설정 */
   padding: 20px; /* 컨테이너 주변의 여백 설정 */
 }
+
+.card {
+  flex: 1 1 calc(33.33% - 20px); /* 한 줄에 3개의 카드를 배치하고 간격을 고려한 계산 */
+  margin-bottom: 20px; /* 아래 여백 추가 */
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  background-color: #fff;
+  border: 1px solid #f74c26;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 8px 16px rgb(0 0 0 / 20%);
+    transform: scale(1.05);
+  }
+}
