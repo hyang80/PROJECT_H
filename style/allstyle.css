@@ -1,0 +1,106 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #666;
+}
+
+.section {
+  padding: 8px;
+}
+
+.navigation {
+  color: #f74c26;
+  background-color: #f7f6f2;
+}
+.navigation__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation__logo svg {
+  height: 40px;
+}
+.navigation__page-title {
+  margin-left: 20px;
+  font-size: 1.5em;
+}
+.navigation__menu-group--right {
+  display: flex;
+  gap: 10px;
+}
+.navigation__btn {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.navigation__btn--outline {
+  background: transparent;
+  border: 1px solid #fff;
+}
+.navigation__btn--fill {
+  color: #f7f6f2;
+  background-color: #f74c26;
+}
+
+.hero {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+.hero__text {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+.hero__search-input {
+  width: 50%;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 1em;
+}
+
+img {
+  width: 100%;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* 카드들이 줄 바꿈될 수 있도록 설정 */
+  gap: 20px; /* 카드 사이의 간격 설정 */
+  padding: 20px; /* 컨테이너 주변의 여백 설정 */
+}
+
+.card {
+  flex: 1 1 300px; /* 카드 너비를 제어하는 flexbox 속성 */
+  overflow: hidden; /* 내용이 넘치는 것을 방지 */
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 150%;
+  background-color: #fff;
+  border: 1px solid #f74c26;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card__top {
+  padding: 10px;
+  border-bottom: 1px solid #f74c26;
+}
+.card__author {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.card__author-role {
+  color: #666;
+}
+.card__middle {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
