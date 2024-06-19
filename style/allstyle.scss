@@ -28,8 +28,13 @@ body {
 
   &__page-title {
     margin-left: 20px;
-    font-size: 22px;
+    font-size: 30px;
     font-weight: 600;
+    color: #f74c26;
+  }
+
+  &__page-title:hover {
+    text-decoration: underline;
   }
 
   &__menu-group--right {
