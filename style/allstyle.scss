@@ -90,8 +90,7 @@ img {
 }
 
 .card {
-  flex: 1 1 300px; /* 카드 너비를 제어하는 flexbox 속성 */
-  overflow: hidden; /* 내용이 넘치는 것을 방지 */
+  flex: 1 1 300px;
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -100,7 +99,17 @@ img {
   border: 1px solid #f74c26;
   border-radius: 0.75rem;
   box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 
+  /* 기본 그림자와 변환 효과 설정 */
+
+  /* 마우스를 올렸을 때의 스타일 */
+  &:hover {
+    box-shadow: 0 8px 16px rgb(0 0 0 / 20%); /* 더 진한 그림자 */
+    transform: scale(1.05); /* 약간 확대 */
+  }
+
+  /* 카드 내부 요소의 스타일 */
   &__top {
     padding: 10px;
     padding-inline-start: 20px;
